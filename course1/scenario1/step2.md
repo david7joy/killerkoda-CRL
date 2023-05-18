@@ -5,9 +5,9 @@ a) Use the cockroach start command to start the first node:
 ```
 cockroach start \
     --insecure \
-    --store=node3 \
-    --listen-addr=localhost:26259 \
-    --http-addr=localhost:8082 \
+    --store=node1 \
+    --listen-addr=localhost:26257 \
+    --http-addr=localhost:8080 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
 ```{{exec}}
@@ -22,10 +22,6 @@ b) Take a moment to understand the flags you used:
         For a cluster in a single region, set 3-5 `--join` addresses. Each starting node will attempt to contact one of the join hosts. In case a join host cannot be reached, the node will try another address on the list until it can join the gossip network.
 
 - The `--background` flag starts the `cockroach` process in the background so you can continue using the same terminal for other operations.
-
-b) Download the CockroachDB archive for Linux, and extract the binary:
-    
-`curl https://binaries.cockroachdb.com/cockroach-v23.1.1.linux-amd64.tgz | tar -xz`{{exec}}
 
 c) Start two more nodes:
 
