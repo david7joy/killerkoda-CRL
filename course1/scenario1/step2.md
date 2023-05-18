@@ -12,8 +12,7 @@
     --http-addr=localhost:8080 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
-    ```
-    {{exec}}
+    ```{{exec}}
 
  b) Take a moment to understand the flags you used:
 
@@ -24,7 +23,7 @@
 
         For a cluster in a single region, set 3-5 `--join` addresses. Each starting node will attempt to contact one of the join hosts. In case a join host cannot be reached, the node will try another address on the list until it can join the gossip network.
 
-    - The `--background` flag starts the `cockroach` process in the background so you can continue using the same terminal for other operations.
+- The `--background` flag starts the `cockroach` process in the background so you can continue using the same terminal for other operations.
 
     b) Download the CockroachDB archive for Linux, and extract the binary:
     
@@ -34,6 +33,8 @@
 
     Note: These commands are the same as before but with unique --store, --listen-addr, and --http-addr flags. The node names are different and the ports are different too. The reason for 8081 and 8082 is because we are running this locally for testing. In production this will be different.
     
+Lets add a 2nd node
+
     ```
     cockroach start \
     --insecure \
@@ -42,33 +43,33 @@
     --http-addr=localhost:8081 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
-    ```
-    {{exec}}
+    ```{{exec}}
+ 
+Lets add a 3nd node
 
-     ```
+    ```
     cockroach start \
     --insecure \
-    --store=node2 \
-    --listen-addr=localhost:26258 \
-    --http-addr=localhost:8081 \
+    --store=node3 \
+    --listen-addr=localhost:26259 \
+    --http-addr=localhost:8082 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
-    ```
-    {{exec}}
+    ```{{exec}}
 
-    d) Use the cockroach init command to perform a one-time initialization of the cluster, sending the request to any node on the --join list:
+d) Use the cockroach init command to perform a one-time initialization of the cluster, sending the request to any node on the --join list:
 
-    `cockroach init --insecure --host=localhost:26257`{{exec}}
+`cockroach init --insecure --host=localhost:26257`{{exec}}
 
-    You'll see the following message:
+You'll see the following message:
 
-    `Cluster successfully initialized`
+`Cluster successfully initialized`
 
-    At this point, each node also prints helpful startup details to its log. For example, the following command retrieves node 1's startup details:
+At this point, each node also prints helpful startup details to its log. For example, the following command retrieves node 1's startup details:
 
-    `grep 'node starting' node1/logs/cockroach.log -A 11`
+`grep 'node starting' node1/logs/cockroach.log -A 11`
 
-    The output will look something like this:
+The output will look something like this:
 
     ```
     CockroachDB node starting at 
@@ -85,7 +86,7 @@
     nodeID:              1
     ```
 
-   d) Check The Cluster has started status
+e) Check The Cluster has started status
 
    `cockroach node status --insecure`{{exec}}
 
