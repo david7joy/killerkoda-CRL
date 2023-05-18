@@ -12,7 +12,8 @@
     --http-addr=localhost:8080 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
-    ```{{exec}}
+    ```
+    {{exec}}
 
  b) Take a moment to understand the flags you used:
 
