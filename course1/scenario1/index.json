@@ -3,8 +3,8 @@
   "description": "Scenario 1 : Setup a 3 node cockroachDB cluster",
   "steps": [
     {
-      "title": "CQL",
-      "text": "Step1.md"
+      "title": "Cockroach Cluster",
+      "text": "step1.md"
     }
   ],
   "intro": {
