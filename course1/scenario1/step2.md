@@ -2,17 +2,12 @@
 
 ## Start the cluster
 
- a) Use the cockroach start command to start the first node:
-    
-    ```
-    cockroach start \
-    --insecure \
-    --store=node1 \
-    --listen-addr=localhost:26257 \
-    --http-addr=localhost:8080 \
-    --join=localhost:26257,localhost:26258,localhost:26259 \
-    --background
-    ```{{exec}}
+    a) Use the cockroach start command to start the first node:
+
+        ```
+        uname -r
+        pwd
+        ```{{copy}}
 
  b) Take a moment to understand the flags you used:
 
