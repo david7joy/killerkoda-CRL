@@ -1,12 +1,6 @@
 {
   "title": "CockroachDB Cluster",
   "description": "Scenario 1 : Setup a 3 node cockroachDB cluster",
-  "steps": [
-    {
-      "title": "Cockroach Cluster",
-      "text": "step1.md"
-    }
-  ],
   "intro": {
     "text": "intro.md"
   },
