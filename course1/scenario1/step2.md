@@ -1,13 +1,25 @@
 # CockroachDB Cluster Setup
 
+### Execute multiline code block
+
+    ```
+    uname -r
+    pwd
+    ```{{exec}}
+
 ## Start the cluster
 
-    a) Use the cockroach start command to start the first node:
+a) Use the cockroach start command to start the first node:
 
-        ```
-        uname -r
-        pwd
-        ```{{copy}}
+    ```
+    cockroach start \
+    --insecure \
+    --store=node3 \
+    --listen-addr=localhost:26259 \
+    --http-addr=localhost:8082 \
+    --join=localhost:26257,localhost:26258,localhost:26259 \
+    --background
+    ```{{exec}}
 
  b) Take a moment to understand the flags you used:
 
