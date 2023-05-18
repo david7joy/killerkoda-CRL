@@ -9,5 +9,8 @@
       "title": "CQL",
       "text": "Step1.md"
     }
-  ]
+  ],
+  "intro": {
+    "text": "intro.md"
+  }
 }
