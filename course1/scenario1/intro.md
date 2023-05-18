@@ -1,13 +1,7 @@
 In this scenario, you will:
 
-* Learn about Cassandra Query Language (CQL)
-* Use the CQL shell
-* Execute statements `CREATE KEYSPACE`, `USE` and `CREATE TABLE`
-* Practice using statements `INSERT`, `SELECT`, `UPDATE` and `DELETE`
+* Learn how to setup a 3  Node CockroachDB Cluster 
+* Check the Status of Your cluster
 
-| TEST | TEST |
-| ---- | ---- |
-| OK | OK |
+Note:  We are going to create 3 nodes on a single ubunto server. Running multiple nodes on a single host is useful for testing CockroachDB, but it's not suitable for production.
 
-
-_This scenario is also available on our [datastax.com/dev](https://www.datastax.com/learn/cassandra-fundamentals/cql) site, where you can find many more resources to help you succeed with Apache Cassandra™._

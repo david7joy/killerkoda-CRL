@@ -1,40 +1,53 @@
+### Download cockroachDB Binary
 
-### Single line code blocks can be copied by default
-`copy me`
+1. Get the latest version of cockroachDB
 
-### It can also be disabled
-`copying disabled`{{}}
+`curl https://binaries.cockroachdb.com/cockroach-v23.1.1.linux-amd64.tgz | tar -xz`{{exec}}
 
-### Execute a command per click
-`ls -lh`{{exec}}
+2. CockroachDB uses custom-built versions of the GEOS libraries. Copy these libraries to one of the locations where CockroachDB expects to find them.
 
-### Send Ctrl+c before execute
-Run a blocking command:
-`sleep 1d`{{exec}}
+    a) Create the directory where the external libraries will be stored:
 
-End it and run another:
-`whoami`{{exec interrupt}}
+    `mkdir -p /usr/local/lib/cockroach`{{exec}}
 
-### Copy multiline code block
-```
-uname -r
-pwd
-```{{copy}}
+    b) Copy the library files to the directory:
 
-### Execute multiline code block
+    `cp -i cockroach-v23.1.1.linux-amd64/lib/libgeos.so /usr/local/lib/cockroach/`{{exec}}
 
-```
-uname -r
-pwd
-```{{exec}}
+    `cp -i cockroach-v23.1.1.linux-amd64/lib/libgeos_c.so /usr/local/lib/cockroach/`{{exec}}
 
+    If you get a permissions error, prefix the command with sudo.
 
-### Execute multiline code block with Ctrl+c
-Run a blocking command:
-`sleep 1d`{{exec}}
+3. Verify that CockroachDB can execute spatial queries.
 
-End it and run others:
-```
-uname -r
-whoami
-```{{exec interrupt}}
+    a) Make sure the cockroach binary you just installed is the one that runs when you type cockroach in your shell:
+
+    `which cockroach`{{exec}}
+
+    ```
+    /usr/local/bin/cockroach
+    ```
+
+    b) Start a temporary, in-memory cluster using cockroach demo:
+
+    `cockroach demo`{{exec}}
+
+    c) In the demo cluster's interactive SQL shell, run the following command to test that the spatial libraries have loaded properly:
+
+    `SELECT ST_IsValid(ST_MakePoint(1,2));`{{exec}}
+
+    You should see the following output:
+
+    ```
+    st_isvalid
+    --------------
+    true
+    (1 row)
+    ```
+
+    If your cockroach binary is not properly accessing the dynamically linked C libraries in /usr/local/lib/cockroach, it will output an error message like the one below.
+
+    ```
+    ERROR: st_isvalid(): geos: error during GEOS init: geos: cannot load GEOS from dir "/usr/local/lib/cockroach": failed to execute dlopen
+          Failed running "sql"
+    ```
