@@ -1,8 +1,19 @@
 ### Download cockroachDB Binary
 
-1. Get the latest version of cockroachDB
+1. Get cockroachDB Binary
 
-`curl https://binaries.cockroachdb.com/cockroach-v23.1.1.linux-amd64.tgz | tar -xz`{{exec}}
+    a) Set path 
+    
+    `cd /home/ubuntu`{{exec}}
+
+    b) Download the CockroachDB archive for Linux, and extract the binary:
+    
+    `curl https://binaries.cockroachdb.com/cockroach-v23.1.1.linux-amd64.tgz | tar -xz`{{exec}}
+
+    c) Copy the binary into the PATH:
+    `cp -i cockroach-v23.1.1.linux-amd64/cockroach /usr/local/bin/`{{exec}}
+
+    If you get a permissions error, prefix the command with sudo.
 
 2. CockroachDB uses custom-built versions of the GEOS libraries. Copy these libraries to one of the locations where CockroachDB expects to find them.
 
