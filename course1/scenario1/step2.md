@@ -1,8 +1,8 @@
-### CockroachDB Cluster Setup
+# CockroachDB Cluster Setup
 
-1. Start the cluster
+## Start the cluster
 
-    a) Use the cockroach start command to start the first node:
+ a) Use the cockroach start command to start the first node:
     
     ```
     cockroach start \
@@ -12,10 +12,9 @@
     --http-addr=localhost:8080 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
-    ```
-    {{exec}}
+    ```{{exec}}
 
-    b) Take a moment to understand the flags you used:
+ b) Take a moment to understand the flags you used:
 
    -  The `--insecure` flag makes communication unencrypted.
     - Since this is a purely local cluster, `--listen-addr=localhost:26257` and `--http-addr=localhost:8080` tell the node to listen only on `localhost`, with port `26257` used for internal and client traffic and port `8080` used for HTTP requests from the DB Console.
