@@ -3,5 +3,11 @@
   "description": "Scenario 1 : Setup a 3 node cockroachDB cluster",
   "backend": {
     "imageid": "ubuntu"
-  }
+  },
+  "steps": [
+    {
+      "title": "CQL",
+      "text": "Step1.md"
+    }
+  ]
 }
