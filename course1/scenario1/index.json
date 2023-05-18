@@ -1,8 +1,16 @@
 {
   "title": "CockroachDB Cluster",
   "description": "Scenario 1 : Setup a 3 node cockroachDB cluster",
-  "intro": {
-    "text": "intro.md"
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Cockroach Cluster",
+        "text": "step1.md"
+      }
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
