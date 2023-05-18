@@ -1,4 +1,7 @@
-### Copy multiline code block
+## Start the cluster
+
+a) Use the cockroach start command to start the first node:
+
 ```
 cockroach start \
     --insecure \
@@ -7,7 +10,7 @@ cockroach start \
     --http-addr=localhost:8082 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
-```{{copy}}
+```{{exec}}
 
 ### Execute multiline code block
 
