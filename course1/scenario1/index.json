@@ -1,6 +1,6 @@
 {
-  "title": "Scenario ONE",
-  "description": "This is the description of scenario ONE in course ONE",
+  "title": "CockroachDB Cluster",
+  "description": "Scenario 1 : Setup a 3 node cockroachDB cluster",
   "backend": {
     "imageid": "ubuntu"
   }
