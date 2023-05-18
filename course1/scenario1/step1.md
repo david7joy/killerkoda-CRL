@@ -1,6 +1,6 @@
 ### Download cockroachDB Binary
 
-1. Get cockroachDB Binary
+1. Use the cockroach start command to start the first node:
 
     a) Set path 
     
@@ -11,6 +11,7 @@
     `curl https://binaries.cockroachdb.com/cockroach-v23.1.1.linux-amd64.tgz | tar -xz`{{exec}}
 
     c) Copy the binary into the PATH:
+    
     `cp -i cockroach-v23.1.1.linux-amd64/cockroach /usr/local/bin/`{{exec}}
 
     If you get a permissions error, prefix the command with sudo.

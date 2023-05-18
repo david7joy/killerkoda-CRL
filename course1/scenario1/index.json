@@ -7,8 +7,12 @@
     },
     "steps": [
       {
-        "title": "Cockroach Cluster",
+        "title": "Module 1(a): Download CockroachDB Binary",
         "text": "step1.md"
+      },
+      {
+        "title": "Module 1(b): CockroachDB Cluster Setup",
+        "text": "step2.md"
       }
     ]
   },
