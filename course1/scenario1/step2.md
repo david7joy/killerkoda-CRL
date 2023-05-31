@@ -7,7 +7,7 @@ cockroach start \
     --insecure \
     --store=node1 \
     --listen-addr=localhost:26257 \
-    --http-addr=localhost:8080 \
+    --http-addr=0.0.0.0:8081 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
 ```{{exec}}
@@ -32,7 +32,7 @@ cockroach start \
     --insecure \
     --store=node2 \
     --listen-addr=localhost:26258 \
-    --http-addr=localhost:8081 \
+    --http-addr=0.0.0.0:8082 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
 ```{{exec}}
@@ -42,7 +42,7 @@ cockroach start \
     --insecure \
     --store=node3 \
     --listen-addr=localhost:26259 \
-    --http-addr=localhost:8082 \
+    --http-addr=0.0.0.0:8083 \
     --join=localhost:26257,localhost:26258,localhost:26259 \
     --background
 ```{{exec}}
@@ -82,4 +82,4 @@ e) Check The Cluster has started status
 
 This should show 3 nodes running in a cluster.
 
- 
+f) Access the interface Web UI at [CockroachDB UI]({{TRAFFIC_HOST1_8080}})
