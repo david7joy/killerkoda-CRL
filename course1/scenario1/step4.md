@@ -14,13 +14,13 @@ CREATE DATABASE GameData;
 c) View the cluster's databases, which will include `GameData``:
 
 ```
-SHOW DATABASES'
+SHOW DATABASES;
 ```{{exec}}
 
 d) Creata a table `users` in database `GameData`:
 
 ```
-USE GameData
+USE GameData;
 ```{{exec}}
 
 ```
@@ -34,8 +34,11 @@ CREATE TABLE users (
   timezone VARCHAR(255) NULL,
   metadata JSONB NOT NULL DEFAULT '{}':::JSONB,
   wallet JSONB NOT NULL DEFAULT '{}':::JSONB,
-  email VARCHAR(255) NULL,
-)
+  email VARCHAR(255) NULL);
+```{{exec}}
+
+```
+show tables;
 ```{{exec}}
 
 e) Insert some data into table `users` in database `GameData`:
@@ -43,3 +46,8 @@ e) Insert some data into table `users` in database `GameData`:
 f) delete some data from the table `users` in database `GameData: 
 
 g) update `users` in database `GameData`
+
+h) let's exit from cockroach sql shell
+```
+exit
+```{{exec}}

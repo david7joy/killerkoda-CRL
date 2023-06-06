@@ -1,4 +1,4 @@
-## CockroachDB Workload & Node Failure
+## Run CockroachDB Workload & Test Resiliency with Node Failure
 
 * Initialize the CockroachDB workload called `movr`
 
