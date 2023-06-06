@@ -15,12 +15,16 @@
         "text": "step2.md"
       },
       {
-        "title": "Module 1(c): Running queries on Cockroachdb ",
+        "title": "Module 1(c): DB Console  ",
         "text": "step3.md"
       },
       {
-        "title": "Module 1(d): Run Workload",
+        "title": "Module 2(a): Running queries on Cockroachdb ",
         "text": "step4.md"
+      },
+      {
+        "title": "Module 1(d): Run Workload",
+        "text": "step5.md"
       }
     ]
   },
