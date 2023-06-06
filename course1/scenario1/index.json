@@ -13,6 +13,14 @@
       {
         "title": "Module 1(b): CockroachDB Cluster Setup",
         "text": "step2.md"
+      },
+      {
+        "title": "Module 1(c): Running queries on Cockroachdb ",
+        "text": "step3.md"
+      },
+      {
+        "title": "Module 1(d): Run Workload",
+        "text": "step4.md"
       }
     ]
   },
