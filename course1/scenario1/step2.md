@@ -49,7 +49,7 @@ cockroach start \
 
 d) Use the cockroach init command to perform a one-time initialization of the cluster, sending the request to any node on the --join list:
 
-`cockroach init --insecure --host=localhost:26257`{{exec}}
+```cockroach init --insecure --host=localhost:26257```{{exec}}
 
 You'll see the following message:
 
@@ -57,7 +57,7 @@ You'll see the following message:
 
 At this point, each node also prints helpful startup details to its log. For example, the following command retrieves node 1's startup details:
 
-`grep 'node starting' node1/logs/cockroach.log -A 11`
+```grep 'node starting' node1/logs/cockroach.log -A 11```{{exec}}
 
 The output will look something like this:
 

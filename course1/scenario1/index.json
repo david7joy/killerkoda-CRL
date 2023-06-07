@@ -35,12 +35,20 @@
         "text": "step5.md"
       },
       {
-        "title": "Module 3",
+        "title": "Module 3 : Test Resiliency with CockroachDB",
         "text": "module3.md"
       },
       {
-        "title": "Module 3a: Test Resiliency - Kill CRDB node",
+        "title": "Module 3a: Kill CRDB node",
         "text": "step6.md"
+      },
+      {
+        "title": "Module 3b: Add CRDB node",
+        "text": "step6.md"
+      },
+      {
+        "title": "Module 4 : Cockroach Lab Game",
+        "text": "module4.md"
       },
       {
         "text": "finished.md"

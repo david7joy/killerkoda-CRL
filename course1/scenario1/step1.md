@@ -67,5 +67,5 @@
     d) let's exit from cockroach sql shell
     
     ```
-    exit
+    exit;
     ```{{exec}}

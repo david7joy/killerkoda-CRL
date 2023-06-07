@@ -33,6 +33,7 @@ The Metrics page provides dashboards for all types of CockroachDB metrics.
 
 Note :  Follow the [DB Console](https://www.cockroachlabs.com/docs/stable/ui-overview.html) link to learn more about the features of DB Console. 
 
+End of module 1
 ----
 
 

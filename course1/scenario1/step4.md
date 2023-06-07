@@ -1,8 +1,9 @@
-## Running queries on Cockroachdb 
+# Running queries on Cockroachdb 
 
 a) Launch the built-in SQL client, with the --host flag set to the address of the load balancer:
 
-```cockroach sql --insecure
+```
+cockroach sql --insecure
 ```{{exec}}
 
 b) Lets create a new database called `GameData`
@@ -49,5 +50,5 @@ g) update `users` in database `GameData`
 
 h) let's exit from cockroach sql shell
 ```
-exit
+exit;
 ```{{exec}}
