@@ -22,6 +22,9 @@
         "text": "step3.md"
       },
       {
+        "title": "Module 2"
+      },
+      {
         "title": "Module 2(a): Running queries on Cockroachdb ",
         "text": "step4.md"
       },
@@ -30,7 +33,10 @@
         "text": "step5.md"
       },
       {
-        "title": "Module 3: Test Resiliency - Kill CRDB node",
+        "title": "Module 3"
+      },
+      {
+        "title": "Module 3a: Test Resiliency - Kill CRDB node",
         "text": "step6.md"
       },
       {
