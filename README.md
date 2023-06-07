@@ -4,7 +4,7 @@ See these in action here: https://killercoda.com/examples-courses
 
 Documentation: https://killercoda.com/creators
 
-#testing
+ubuntu $ cockroach start --insecure --store=node1 --listen-addr=localhost:26257 --http-addr=localhost:8080 --join=localhost:26257,localhost:26258,localhost:26259 --background
 
 
 ## Structure
