@@ -84,4 +84,4 @@ This should show 3 nodes running in a cluster.
 
 f) Access the DB Console Web UI at [CockroachDB UI]({{TRAFFIC_HOST1_8081}}) 
 
-However, this is going to fail because you need to provide access to port. Let's do that in the next step of this module. Click Next. 
+In the next module let's learn about DB Console a bit more. 

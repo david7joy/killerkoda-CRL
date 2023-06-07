@@ -63,3 +63,9 @@
     ERROR: st_isvalid(): geos: error during GEOS init: geos: cannot load GEOS from dir "/usr/local/lib/cockroach": failed to execute dlopen
           Failed running "sql"
     ```
+
+    d) let's exit from cockroach sql shell
+    
+    ```
+    exit
+    ```{{exec}}
