@@ -7,8 +7,8 @@ The [DB Console](https://www.cockroachlabs.com/docs/stable/ui-overview.html) pro
 ### a) Access DB Console 
 
 To access the DB Console with Killercoda.
-- Go to the ```top right corner list icon``` next to session minutes.
-- Click on ```traffic/ports```, this will open Traffic Port Accessor page
+- Go to the `top right corner list icon` next to session minutes.
+- Click on `traffic/ports`, this will open Traffic Port Accessor page
 
 ### b) Give access to external port using custom port
 - Add `8081` in custom port and then click access.
