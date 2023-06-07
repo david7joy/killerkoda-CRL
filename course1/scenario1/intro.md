@@ -18,5 +18,6 @@ The current workshop will help you deploy an insecure (no-SSL) CockroachDB clust
 - Module 1(c): Monitor CockroachDB with DB Console
 - Module 2(a): Running queries on Cockroachdb
 - Module 2(b): Run Workload
+- Module 3(a): Test Resiliency of CockroachDB Cluster
 
 Note:  We are going to create 3 nodes on a single ubunto server. Running multiple nodes on a single host is helpful for testing CockroachDB, but it's not suitable for production.
