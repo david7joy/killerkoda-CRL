@@ -7,7 +7,8 @@
     },
     "steps": [
       {
-        "title": "Module 1"
+        "title": "Module 1",
+        "text": "module1.md"
       },
       {
         "title": "Module 1(a): Download CockroachDB Binary",
@@ -22,7 +23,8 @@
         "text": "step3.md"
       },
       {
-        "title": "Module 2"
+        "title": "Module 2",
+        "text": "module2.md"
       },
       {
         "title": "Module 2(a): Running queries on Cockroachdb ",
@@ -33,7 +35,8 @@
         "text": "step5.md"
       },
       {
-        "title": "Module 3"
+        "title": "Module 3",
+        "text": "module3.md"
       },
       {
         "title": "Module 3a: Test Resiliency - Kill CRDB node",
