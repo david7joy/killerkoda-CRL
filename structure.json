@@ -1,5 +1,5 @@
 {
   "items": [
-    { "path": "Course1", "title": "CockroachDB Workshop : Level 1" }
+    { "path": "course1", "title": "CockroachDB Workshop : Level1" }
   ]
 }
