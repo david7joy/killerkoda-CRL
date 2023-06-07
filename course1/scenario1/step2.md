@@ -82,4 +82,6 @@ e) Check The Cluster has started status
 
 This should show 3 nodes running in a cluster.
 
-f) Access the interface Web UI at [CockroachDB UI]({{TRAFFIC_HOST1_8080}})
+f) Access the DB Console Web UI at [CockroachDB UI]({{TRAFFIC_HOST1_8081}}) 
+
+However, this is going to fail because you need to provide access to port. Let's do that in the next step of this module. Click Next. 

@@ -27,6 +27,10 @@
         "text": "step5.md"
       },
       {
+        "title": "Module 3: Test Resiliency - Kill CRDB node",
+        "text": "step6.md"
+      },
+      {
         "text": "finished.md"
       }
     ]
