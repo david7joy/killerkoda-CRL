@@ -13,7 +13,10 @@ Follow the below steps:
     - Create a `username`
     - Add an `email` and `password` : No need to add real email it can be a fake email and password should be atleast 8 characters 
     - click create account
-- Then Create a game and withing a few minutes you will be matchd with other players and you can play the game and battle it out :) 
+- Change `find at least to 3 players` and click match
+    - This will create a real-time match and put players into specific 3 player matches withing a few minutes.
+    - Once that is done, click on ready to play the game and battle it out :) 
+
 - Use the below Keyboard keys to be able to play the game. 
 
     | Action     | Keyboard Keys  |
@@ -22,3 +25,7 @@ Follow the below steps:
     | pickup/throw weapon     | C        |
     | use weapon | V        |
     | blub     | E        |
+
+----
+End of Module 4
+----

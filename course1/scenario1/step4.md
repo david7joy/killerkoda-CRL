@@ -50,5 +50,5 @@ g) update `users` in database `GameData`
 
 h) let's exit from cockroach sql shell
 ```
-exit;
+exit
 ```{{exec}}

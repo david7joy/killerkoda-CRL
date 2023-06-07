@@ -23,7 +23,7 @@ SELECT * FROM movr.users WHERE city='new york';
 c) Exit the CockroachDB SQL console
 
 ```
-exit;
+exit
 ```{{exec}}
 
 d) Run a workload with duration of `1m` against the cluster via the first node with SQL port `26257`
