@@ -49,7 +49,7 @@ INSERT INTO users (id, username, display_name, avatar_url, lang_tag, location, t
 ```{{exec}}
 
 ```
-INSERT INTO users (id, username, display_name, avatar_url, lang_tag, location, timezone, metadata, wallet, email) VALUES ('8b552393-46ae-4cdc-a6af-1b49ca0ba6d5', 'mwollaston3', 'Merralee', 'godaddy.com/aliquet/at/feugiat/non/pretium.xml', 'German', 'Nāḩiyat as Sab' Biyār', 'Asia/Damascus', '[{},{}]', '[{},{}]', 'mtrymme3@earthlink.net');
+INSERT INTO users (id, username, display_name, avatar_url, lang_tag, location, timezone, metadata, wallet, email) VALUES ('8b552393-46ae-4cdc-a6af-1b49ca0ba6d5', 'mwollaston3', 'Merralee', 'godaddy.com/aliquet/at/feugiat/non/pretium.xml', 'German', 'Nagano', 'Asia/Japan', '[{},{}]', '[{},{}]', 'mtrymme3@earthlink.net');
 ```{{exec}}
 
 ```
