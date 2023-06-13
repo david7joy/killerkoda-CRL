@@ -45,7 +45,7 @@ show tables;
 e) Insert some data into table users in database GameData :
 
 ```
-INSERT INTO users (id, username, display_name, avatar_url, lang_tag, location, timezone, metadata, wallet, email) VALUES ('33a57d9c-0efa-4aa0-99cb-9eecb876fef1', 'ptaffley0', 'Phylis', 't-online.de/faucibus.xml', 'New Zealand Sign Language', 'Kuantan', 'Asia/Kuala_Lumpur', '[{},{},{},{}]', '[{},{},{}]', 'pitshak0@addtoany.com');
+INSERT INTO users (id, username, display_name, avatar_url, lang_tag, location, timezone, metadata, wallet, email) VALUES ('33a57d9c-0efa-4aa0-99cb-9eecb876fef1', 'ptaffley0', 'Phylis', 't-online.de/faucibus.xml', 'English', 'Kuantan', 'Asia/Kuala_Lumpur', '[{},{},{},{}]', '[{},{},{}]', 'pitshak0@addtoany.com');
 ```{{exec}}
 
 ```
