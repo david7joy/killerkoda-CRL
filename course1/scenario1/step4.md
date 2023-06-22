@@ -73,7 +73,7 @@ SELECT * FROM users;
 g) update users in database GameData:
 
 ```
-UPDATE users SET lang_tag = 'EN' WHERE username = 'mwollaston3'
+UPDATE users SET lang_tag = 'EN' WHERE username = 'mwollaston3';
 ```{{exec}}
 
 ```
@@ -82,5 +82,5 @@ SELECT * FROM users;
 
 h) let's exit from cockroach sql shell
 ```
-exit
+exit;
 ```{{exec}}

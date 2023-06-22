@@ -18,6 +18,7 @@ b) Let's see the activity in the UI console: [CockroachDB UI Port 8081]({{TRAFFI
 
 Now you have learned how resilient cockroachDB is and how easy it is to scale / upgrade nodes in CockroachDB without effecting Application experience to end users. 
 
+----
 End of Module 3
 ----
  

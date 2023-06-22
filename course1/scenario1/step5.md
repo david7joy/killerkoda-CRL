@@ -34,5 +34,6 @@ cockroach workload run movr --duration=1m 'postgresql://root@localhost:26257?ssl
 
 e) Check the activity at [CockroachDB UI Port 8081]({{TRAFFIC_HOST1_8081}}/#/metrics/overview/cluster) to determine the Service Latency with 3 nodes.
 
+----
 End of Module 2
 ----
